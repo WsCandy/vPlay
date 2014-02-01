@@ -26,10 +26,27 @@ h1 {
   width: 100%;
   float: left;
   clear: both;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 15px; }
+  background: rgba(255, 255, 255, 0.8); }
 
 .video-player {
   width: 100%;
-  border: 1px solid #333333;
-  height: 400px; }
+  clear: both;
+  float: left;
+  position: relative; }
+  .video-player .progress {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    height: 4px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .video-player .progress .progress-bar {
+      width: 0%;
+      float: left;
+      background: #dfbc86;
+      height: 4px; }
+
+.player {
+  width: 100%;
+  float: left; }
